@@ -22,7 +22,7 @@ public class KatagoriPaneli extends JFrame {
         ustPanel.setBackground(new Color(0, 215, 215));
         ustPanel.setPreferredSize(new Dimension(800, 80));
         
-        JButton btnGeri = new JButton("← Geri");
+        JButton btnGeri = new JButton("Geri");
         btnGeri.setFont(new Font("Tahoma", Font.BOLD, 14));
         btnGeri.setBackground(new Color(41, 128, 185));
         btnGeri.setForeground(Color.WHITE);
@@ -87,4 +87,5 @@ public class KatagoriPaneli extends JFrame {
         
         setVisible(true);
     }
+
 }
