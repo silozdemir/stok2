@@ -90,7 +90,7 @@ public class GirisEkrani {
             String rol = girisKontrol(ad, sifre);
 
             if (rol != null) {
-                // Özel başarı mesajı paneli
+ 
                 JPanel mesajPanel = new JPanel();
                 mesajPanel.setLayout(new BoxLayout(mesajPanel, BoxLayout.Y_AXIS));
                 mesajPanel.setBackground(Color.WHITE);
@@ -123,7 +123,7 @@ public class GirisEkrani {
                     new MarkaPaneli(ad);
                 }
             } else {
-                // Özel hata mesajı paneli
+        
                 JPanel hataPanel = new JPanel();
                 hataPanel.setLayout(new BoxLayout(hataPanel, BoxLayout.Y_AXIS));
                 hataPanel.setBackground(Color.WHITE);
@@ -195,4 +195,5 @@ public class GirisEkrani {
         } catch (IOException e) { }
         return null;
     }
+
 }
