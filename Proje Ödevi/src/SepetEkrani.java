@@ -45,8 +45,7 @@ public class SepetEkrani extends JFrame {
         add(ustPanel, BorderLayout.NORTH);
     
         String[] sutunlar = {"Ürün Kodu", "Marka", "Model", "Numara", "Fiyat", "Adet", "Toplam"};
-        model = new DefaultTableModel(sutunlar, 0) {
-            @Override
+        model = new DefaultTableModel(sutunlar, 0) 
             public boolean isCellEditable(int row, int column) {
                 return false;
             }
@@ -292,4 +291,5 @@ public class SepetEkrani extends JFrame {
     }
 
 }
+
 
