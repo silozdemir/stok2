@@ -72,7 +72,7 @@ public class Sepet {
         return true;
     }
     
-    // Sepetteki tüm ürünleri getir
+
     public static ArrayList<SepetItem> tumUrunleriGetir() {
         return new ArrayList<>(items.values());
     }
@@ -116,3 +116,4 @@ public class Sepet {
     }
 
 }
+
