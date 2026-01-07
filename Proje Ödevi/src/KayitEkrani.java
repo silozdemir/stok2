@@ -6,7 +6,7 @@ import java.io.*;
 public class KayitEkrani extends JFrame {
     private JTextField txtYeniAd;
     private JPasswordField txtYeniSifre;
-    private static final String ADMIN_KODU = "SHOESTOCK"; // Admin özel kodu
+    private static final String ADMIN_KODU = "SHOESTOCK"; 
 
     public KayitEkrani() {
         setTitle("Yeni Kullanıcı Kaydı");
@@ -52,14 +52,11 @@ public class KayitEkrani extends JFrame {
         JComboBox<String> comboRol = new JComboBox<>(roller);
         comboRol.setBounds(150, 220, 180, 40);
         comboRol.setFont(new Font("Tahoma", Font.PLAIN, 13));
-        
-        // ComboBox renklerini ayarla
+
         comboRol.setBackground(Color.WHITE);
         comboRol.setForeground(new Color(44, 62, 80));
         
-        // ComboBox'ın dropdown listesini renklendir
         comboRol.setRenderer(new DefaultListCellRenderer() {
-            @Override
             public Component getListCellRendererComponent(JList<?> list, Object value, 
                     int index, boolean isSelected, boolean cellHasFocus) {
                 JLabel label = (JLabel) super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
@@ -141,7 +138,6 @@ public class KayitEkrani extends JFrame {
                 return;
             }
 
-            // Kullanıcı adı zaten var mı kontrol et
             if (kullaniciVarMi(ad)) {
                 JPanel hataPanel = new JPanel();
                 hataPanel.setLayout(new BoxLayout(hataPanel, BoxLayout.Y_AXIS));
@@ -169,7 +165,6 @@ public class KayitEkrani extends JFrame {
                 return;
             }
 
-            // Admin seçildiyse kod kontrolü
             if (rol.equalsIgnoreCase("Admin")) {
                 JPanel kodPanel = new JPanel();
                 kodPanel.setLayout(new BoxLayout(kodPanel, BoxLayout.Y_AXIS));
@@ -193,8 +188,7 @@ public class KayitEkrani extends JFrame {
                 kodPanel.add(lblAciklama);
                 kodPanel.add(Box.createVerticalStrut(10));
                 kodPanel.add(txtKod);
-                
-                // Türkçe butonlar
+
                 Object[] secenekler = {"Tamam", "İptal"};
                 int result = JOptionPane.showOptionDialog(this,
                     kodPanel,
@@ -269,7 +263,6 @@ public class KayitEkrani extends JFrame {
                 }
             }
 
-            // Kayıt işlemi
             rol = rol.equalsIgnoreCase("Admin") ? "admin" : "musteri";
             
             if (kaydet(ad, sifre, rol)) {
@@ -360,4 +353,5 @@ public class KayitEkrani extends JFrame {
             return false;
         }
     }
+
 }
