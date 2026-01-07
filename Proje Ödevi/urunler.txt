@@ -1,0 +1,81 @@
+N001-37,Nike,Spor,Air Max 270,37,15,2499.90,Günlük kullanım için rahat spor ayakkabı
+N001-38,Nike,Spor,Air Max 270,38,18,2499.90,Günlük kullanım için rahat spor ayakkabı
+N001-39,Nike,Spor,Air Max 270,39,20,2499.90,Günlük kullanım için rahat spor ayakkabı
+N002-37,Nike,Spor,Revolution 6,37,12,1899.90,Koşu ve antrenman için ideal
+N002-38,Nike,Spor,Revolution 6,38,20,1899.90,Koşu ve antrenman için ideal
+N002-39,Nike,Spor,Revolution 6,39,16,1899.90,Koşu ve antrenman için ideal
+N003-37,Nike,Spor,Court Vision,37,10,1799.90,Basketbol tarzı günlük ayakkabı
+N003-38,Nike,Spor,Court Vision,38,12,1799.90,Basketbol tarzı günlük ayakkabı
+N003-39,Nike,Spor,Court Vision,39,14,1799.90,Basketbol tarzı günlük ayakkabı
+N004-37,Nike,Koşu,Pegasus 40,37,8,3299.90,Profesyonel koşu ayakkabısı
+N004-38,Nike,Koşu,Pegasus 40,38,10,3299.90,Profesyonel koşu ayakkabısı
+N004-39,Nike,Koşu,Pegasus 40,39,12,3299.90,Profesyonel koşu ayakkabısı
+N005-37,Nike,Koşu,Downshifter 12,37,18,1599.90,Başlangıç seviyesi koşu ayakkabısı
+N005-38,Nike,Koşu,Downshifter 12,38,20,1599.90,Başlangıç seviyesi koşu ayakkabısı
+N005-39,Nike,Koşu,Downshifter 12,39,15,1599.90,Başlangıç seviyesi koşu ayakkabısı
+N006-37,Nike,Koşu,React Infinity,37,10,3599.90,Uzun mesafe koşu için
+N006-38,Nike,Koşu,React Infinity,38,12,3599.90,Uzun mesafe koşu için
+N006-39,Nike,Koşu,React Infinity,39,14,3599.90,Uzun mesafe koşu için
+N007-37,Nike,Casual,Air Force 1,37,25,2999.90,Klasik streetwear ayakkabı
+N007-38,Nike,Casual,Air Force 1,38,22,2999.90,Klasik streetwear ayakkabı
+N007-39,Nike,Casual,Air Force 1,39,28,2999.90,Klasik streetwear ayakkabı
+N008-37,Nike,Casual,Blazer Mid,37,14,2699.90,Retro tasarım günlük ayakkabı
+N008-38,Nike,Casual,Blazer Mid,38,16,2699.90,Retro tasarım günlük ayakkabı
+N008-39,Nike,Casual,Blazer Mid,39,18,2699.90,Retro tasarım günlük ayakkabı
+N009-37,Nike,Casual,Dunk Low,37,9,2899.90,Sokak modasının ikonu
+N009-38,Nike,Casual,Dunk Low,38,11,2899.90,Sokak modasının ikonu
+N009-39,Nike,Casual,Dunk Low,39,13,2899.90,Sokak modasının ikonu
+A001-37,Adidas,Spor,Superstar,37,22,2299.90,Efsanevi shell toe tasarım
+A001-38,Adidas,Spor,Superstar,38,25,2299.90,Efsanevi shell toe tasarım
+A001-39,Adidas,Spor,Superstar,39,20,2299.90,Efsanevi shell toe tasarım
+A002-37,Adidas,Spor,Grand Court,37,16,1699.90,Tenis tarzı günlük ayakkabı
+A002-38,Adidas,Spor,Grand Court,38,18,1699.90,Tenis tarzı günlük ayakkabı
+A002-39,Adidas,Spor,Grand Court,39,20,1699.90,Tenis tarzı günlük ayakkabı
+A003-37,Adidas,Spor,Stan Smith,37,19,2199.90,Minimalist klasik tasarım
+A003-38,Adidas,Spor,Stan Smith,38,22,2199.90,Minimalist klasik tasarım
+A003-39,Adidas,Spor,Stan Smith,39,24,2199.90,Minimalist klasik tasarım
+A004-37,Adidas,Koşu,Ultraboost 23,37,11,4299.90,Premium koşu performansı
+A004-38,Adidas,Koşu,Ultraboost 23,38,13,4299.90,Premium koşu performansı
+A004-39,Adidas,Koşu,Ultraboost 23,39,15,4299.90,Premium koşu performansı
+A005-37,Adidas,Koşu,Solar Glide,37,13,2799.90,Uzun mesafe konforu
+A005-38,Adidas,Koşu,Solar Glide,38,15,2799.90,Uzun mesafe konforu
+A005-39,Adidas,Koşu,Solar Glide,39,17,2799.90,Uzun mesafe konforu
+A006-37,Adidas,Koşu,Duramo SL,37,17,1499.90,Bütçe dostu koşu ayakkabısı
+A006-38,Adidas,Koşu,Duramo SL,38,19,1499.90,Bütçe dostu koşu ayakkabısı
+A006-39,Adidas,Koşu,Duramo SL,39,21,1499.90,Bütçe dostu koşu ayakkabısı
+A007-37,Adidas,Casual,Gazelle,37,20,2399.90,Vintage süet tasarım
+A007-38,Adidas,Casual,Gazelle,38,22,2399.90,Vintage süet tasarım
+A007-39,Adidas,Casual,Gazelle,39,24,2399.90,Vintage süet tasarım
+A008-37,Adidas,Casual,Samba,37,15,2499.90,Futsal tarzı günlük ayakkabı
+A008-38,Adidas,Casual,Samba,38,17,2499.90,Futsal tarzı günlük ayakkabı
+A008-39,Adidas,Casual,Samba,39,19,2499.90,Futsal tarzı günlük ayakkabı
+A009-37,Adidas,Casual,Forum Low,37,12,2599.90,90'lar basketbol estetiği
+A009-38,Adidas,Casual,Forum Low,38,14,2599.90,90'lar basketbol estetiği
+A009-39,Adidas,Casual,Forum Low,39,16,2599.90,90'lar basketbol estetiği
+NB001-37,New Balance,Spor,574 Core,37,18,2199.90,İkonik retro running tasarım
+NB001-38,New Balance,Spor,574 Core,38,20,2199.90,İkonik retro running tasarım
+NB001-39,New Balance,Spor,574 Core,39,22,2199.90,İkonik retro running tasarım
+NB002-37,New Balance,Spor,327,37,21,2399.90,70'lerin klasik koşu estetiği
+NB002-38,New Balance,Spor,327,38,23,2399.90,70'lerin klasik koşu estetiği
+NB002-39,New Balance,Spor,327,39,25,2399.90,70'lerin klasik koşu estetiği
+NB003-37,New Balance,Spor,480,37,14,1899.90,Basketbol esinli günlük ayakkabı
+NB003-38,New Balance,Spor,480,38,16,1899.90,Basketbol esinli günlük ayakkabı
+NB003-39,New Balance,Spor,480,39,18,1899.90,Basketbol esinli günlük ayakkabı
+NB004-37,New Balance,Koşu,Fresh Foam 1080,37,9,3799.90,Premium koşu yastıklama
+NB004-38,New Balance,Koşu,Fresh Foam 1080,38,11,3799.90,Premium koşu yastıklama
+NB004-39,New Balance,Koşu,Fresh Foam 1080,39,13,3799.90,Premium koşu yastıklama
+NB005-37,New Balance,Koşu,FuelCell Rebel,37,16,2999.90,Hafif ve hızlı koşu ayakkabısı
+NB005-38,New Balance,Koşu,FuelCell Rebel,38,18,2999.90,Hafif ve hızlı koşu ayakkabısı
+NB005-39,New Balance,Koşu,FuelCell Rebel,39,20,2999.90,Hafif ve hızlı koşu ayakkabısı
+NB006-37,New Balance,Koşu,880 v12,37,11,2599.90,Günlük antrenman için ideal
+NB006-38,New Balance,Koşu,880 v12,38,13,2599.90,Günlük antrenman için ideal
+NB006-39,New Balance,Koşu,880 v12,39,15,2599.90,Günlük antrenman için ideal
+NB007-37,New Balance,Casual,550,37,13,2899.90,Vintage basketbol silüeti
+NB007-38,New Balance,Casual,550,38,15,2899.90,Vintage basketbol silüeti
+NB007-39,New Balance,Casual,550,39,17,2899.90,Vintage basketbol silüeti
+NB008-37,New Balance,Casual,2002R,37,17,2699.90,Y2K estetiği modern konfor
+NB008-38,New Balance,Casual,2002R,38,19,2699.90,Y2K estetiği modern konfor
+NB008-39,New Balance,Casual,2002R,39,21,2699.90,Y2K estetiği modern konfor
+NB009-37,New Balance,Casual,9060,37,15,3199.90,Chunky retro hybrid tasarım
+NB009-38,New Balance,Casual,9060,38,17,3199.90,Chunky retro hybrid tasarım
+NB009-39,New Balance,Casual,9060,39,19,3199.90,Chunky retro hybrid tasarım
