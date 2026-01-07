@@ -16,12 +16,12 @@ public class MarkaPaneli extends JFrame {
         getContentPane().setLayout(new BorderLayout());
         getContentPane().setBackground(new Color(0, 215, 215));
 
-        // ÜST PANEL - GERİ BUTONU VE BAŞLIK
+
         JPanel ustPanel = new JPanel(new BorderLayout());
         ustPanel.setBackground(new Color(0, 215, 215));
         ustPanel.setPreferredSize(new Dimension(800, 100));
 
-        // GERİ BUTONU - GİRİŞ EKRANINA DÖN
+     
         JButton btnGeri = new JButton("← Geri");
         btnGeri.setFont(new Font("Tahoma", Font.BOLD, 14));
         btnGeri.setBackground(new Color(52, 152, 219));
@@ -52,7 +52,7 @@ public class MarkaPaneli extends JFrame {
 
         add(ustPanel, BorderLayout.NORTH);
 
-        // ORTA PANEL - MARKA BUTONLARI
+     
         JPanel ortaPanel = new JPanel();
         ortaPanel.setBackground(new Color(0, 215, 215));
         ortaPanel.setLayout(new GridLayout(2, 2, 30, 30));
@@ -60,11 +60,11 @@ public class MarkaPaneli extends JFrame {
 
         Map<String, ArrayList<Product>> markaMap = ProductManager.markalaragGrupla();
 
-        // Marka renkleri
+     
         Color[] markaRenkleri = {
-            new Color(155, 89, 182), // Mor
-            new Color(52, 152, 219),  // Mavi
-            new Color(46, 204, 113)   // Yeşil
+            new Color(155, 89, 182),
+            new Color(52, 152, 219),  
+            new Color(46, 204, 113)  
         };
 
         int renkIndex = 0;
@@ -79,7 +79,7 @@ public class MarkaPaneli extends JFrame {
             int urunSayisi = markaMap.get(marka).size();
             btnMarka.setToolTipText(urunSayisi + " ürün mevcut");
 
-            // Marka butonuna tıklandığında kategori paneline git
+          
             btnMarka.addActionListener(e -> {
                 dispose();
                 new KatagoriPaneli(kullaniciAdi, marka);
@@ -91,15 +91,15 @@ public class MarkaPaneli extends JFrame {
 
         add(ortaPanel, BorderLayout.CENTER);
 
-        // ALT PANEL - SEPETİM, SİPARİŞLERİM VE ÇIKIŞ BUTONLARI
+   
         JPanel altPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 10));
         altPanel.setBackground(new Color(0, 215, 215));
         altPanel.setPreferredSize(new Dimension(800, 80));
         
-        // Sepet kullanıcıyı ayarla
+        
         Sepet.kullaniciAyarla(kullaniciAdi);
 
-        JButton btnSepetim = new JButton("🛒 Sepetim (" + Sepet.toplamUrunSayisi() + ")");
+        JButton btnSepetim = new JButton("Sepetim (" + Sepet.toplamUrunSayisi() + ")");
         btnSepetim.setFont(new Font("Tahoma", Font.BOLD, 16));
         btnSepetim.setBackground(new Color(155, 89, 182));
         btnSepetim.setForeground(Color.WHITE);
@@ -110,7 +110,7 @@ public class MarkaPaneli extends JFrame {
             new SepetEkrani(kullaniciAdi).setVisible(true);
         });
 
-        JButton btnSiparislerim = new JButton("📦 Siparişlerim");
+        JButton btnSiparislerim = new JButton("Siparişlerim");
         btnSiparislerim.setFont(new Font("Tahoma", Font.BOLD, 16));
         btnSiparislerim.setBackground(new Color(41, 128, 185));
         btnSiparislerim.setForeground(Color.WHITE);
@@ -121,7 +121,7 @@ public class MarkaPaneli extends JFrame {
             new SiparisGecmisiEkrani(kullaniciAdi).setVisible(true);
         });
 
-        JButton btnCikis = new JButton("🚪 Çıkış");
+        JButton btnCikis = new JButton("Çıkış");
         btnCikis.setFont(new Font("Tahoma", Font.BOLD, 16));
         btnCikis.setBackground(new Color(231, 76, 60));
         btnCikis.setForeground(Color.WHITE);
@@ -145,4 +145,5 @@ public class MarkaPaneli extends JFrame {
 
         setVisible(true);
     }
+
 }
