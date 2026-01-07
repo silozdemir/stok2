@@ -12,18 +12,18 @@ public class SepetEkrani extends JFrame {
     public SepetEkrani(String kullaniciAdi) {
         this.kullaniciAdi = kullaniciAdi;
         
-        setTitle("🛒 Sepetim - " + kullaniciAdi);
+        setTitle("Sepetim - " + kullaniciAdi);
         setSize(1000, 600);
         setLocationRelativeTo(null);
         getContentPane().setLayout(new BorderLayout());
         getContentPane().setBackground(Color.WHITE);
         
-        // ÜST PANEL
+
         JPanel ustPanel = new JPanel(new BorderLayout());
         ustPanel.setBackground(new Color(155, 89, 182));
         ustPanel.setPreferredSize(new Dimension(1000, 80));
         
-        // Geri butonu
+     
         JButton btnGeri = new JButton("← Geri");
         btnGeri.setFont(new Font("Tahoma", Font.BOLD, 14));
         btnGeri.setBackground(new Color(127, 140, 141));
@@ -43,8 +43,7 @@ public class SepetEkrani extends JFrame {
         ustPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
         
         add(ustPanel, BorderLayout.NORTH);
-        
-        // TABLO
+    
         String[] sutunlar = {"Ürün Kodu", "Marka", "Model", "Numara", "Fiyat", "Adet", "Toplam"};
         model = new DefaultTableModel(sutunlar, 0) {
             @Override
@@ -66,13 +65,13 @@ public class SepetEkrani extends JFrame {
         scrollPane.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
         add(scrollPane, BorderLayout.CENTER);
         
-        // ALT PANEL
+     
         JPanel altPanel = new JPanel(new BorderLayout());
         altPanel.setBackground(Color.WHITE);
         altPanel.setPreferredSize(new Dimension(1000, 120));
         altPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
         
-        // Toplam tutar paneli
+   
         JPanel toplamPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT, 20, 10));
         toplamPanel.setBackground(Color.WHITE);
         
@@ -86,8 +85,7 @@ public class SepetEkrani extends JFrame {
         
         toplamPanel.add(lblToplamBaslik);
         toplamPanel.add(lblToplamTutar);
-        
-        // Buton paneli
+ 
         JPanel butonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         butonPanel.setBackground(Color.WHITE);
         
@@ -109,7 +107,7 @@ public class SepetEkrani extends JFrame {
         btnAdetAzalt.setBorderPainted(false);
         btnAdetAzalt.addActionListener(e -> adetDegistir(-1));
         
-        JButton btnSil = new JButton("🗑️ Sepetten Çıkar");
+        JButton btnSil = new JButton("Sepetten Çıkar");
         btnSil.setPreferredSize(new Dimension(160, 45));
         btnSil.setBackground(new Color(231, 76, 60));
         btnSil.setForeground(Color.WHITE);
@@ -118,7 +116,7 @@ public class SepetEkrani extends JFrame {
         btnSil.setBorderPainted(false);
         btnSil.addActionListener(e -> sepettenCikar());
         
-        JButton btnTemizle = new JButton("🔄 Sepeti Temizle");
+        JButton btnTemizle = new JButton("Sepeti Temizle");
         btnTemizle.setPreferredSize(new Dimension(160, 45));
         btnTemizle.setBackground(new Color(149, 165, 166));
         btnTemizle.setForeground(Color.WHITE);
@@ -127,7 +125,7 @@ public class SepetEkrani extends JFrame {
         btnTemizle.setBorderPainted(false);
         btnTemizle.addActionListener(e -> sepetiTemizle());
         
-        JButton btnSiparisVer = new JButton("✓ Sipariş Ver");
+        JButton btnSiparisVer = new JButton("Sipariş Ver");
         btnSiparisVer.setPreferredSize(new Dimension(160, 45));
         btnSiparisVer.setBackground(new Color(46, 204, 113));
         btnSiparisVer.setForeground(Color.WHITE);
@@ -157,7 +155,7 @@ public class SepetEkrani extends JFrame {
         
         add(altPanel, BorderLayout.SOUTH);
         
-        // Tüm componentler oluşturulduktan sonra sepeti yükle
+        
         sepetiYukle();
     }
     
@@ -257,7 +255,7 @@ public class SepetEkrani extends JFrame {
             return;
         }
         
-        // Onay mesajı
+  
         String mesaj = String.format(
             "Toplam %d ürün\nToplam Tutar: %.2f TL\n\nSiparişi onaylıyor musunuz?",
             Sepet.toplamUrunSayisi(),
@@ -275,21 +273,22 @@ public class SepetEkrani extends JFrame {
             secenekler[0]);
         
         if (onay == JOptionPane.YES_OPTION) {
-            // Tüm ürünleri sipariş et
+   
             ArrayList<Sepet.SepetItem> items = Sepet.tumUrunleriGetir();
             for (Sepet.SepetItem item : items) {
                 ProductManager.siparisKaydet(kullaniciAdi, item.getUrun(), item.getAdet());
             }
             
-            // Sepeti temizle
+            
             Sepet.temizle();
             
             JOptionPane.showMessageDialog(this,
-                "✓ Siparişleriniz başarıyla oluşturuldu!\n\nSipariş geçmişinden kontrol edebilirsiniz.",
+                "Siparişleriniz başarıyla oluşturuldu!\n\nSipariş geçmişinden kontrol edebilirsiniz.",
                 "Sipariş Başarılı",
                 JOptionPane.INFORMATION_MESSAGE);
             
             dispose();
         }
     }
+
 }
