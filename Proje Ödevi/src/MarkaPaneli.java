@@ -22,7 +22,7 @@ public class MarkaPaneli extends JFrame {
         ustPanel.setPreferredSize(new Dimension(800, 100));
 
      
-        JButton btnGeri = new JButton("← Geri");
+        JButton btnGeri = new JButton("Geri");
         btnGeri.setFont(new Font("Tahoma", Font.BOLD, 14));
         btnGeri.setBackground(new Color(52, 152, 219));
         btnGeri.setForeground(Color.WHITE);
@@ -147,3 +147,4 @@ public class MarkaPaneli extends JFrame {
     }
 
 }
+
