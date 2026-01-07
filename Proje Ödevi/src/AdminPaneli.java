@@ -16,7 +16,6 @@ public class AdminPaneli extends JFrame {
         getContentPane().setLayout(new BorderLayout());
         getContentPane().setBackground(new Color(0, 215, 215));
         
-        // ÜST PANEL
         JPanel ustPanel = new JPanel(new BorderLayout());
         ustPanel.setBackground(new Color(0, 215, 215));
         ustPanel.setPreferredSize(new Dimension(900, 100));
@@ -63,8 +62,7 @@ public class AdminPaneli extends JFrame {
         ustPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
         
         add(ustPanel, BorderLayout.NORTH);
-        
-        // ORTA PANEL
+
         JPanel ortaPanel = new JPanel();
         ortaPanel.setBackground(new Color(0, 215, 215));
         ortaPanel.setLayout(new GridLayout(2, 2, 30, 30));
@@ -117,7 +115,6 @@ public class AdminPaneli extends JFrame {
         
         add(ortaPanel, BorderLayout.CENTER);
         
-        // ALT PANEL
         JPanel altPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 10));
         altPanel.setBackground(new Color(0, 215, 215));
         altPanel.setPreferredSize(new Dimension(900, 80));
@@ -213,4 +210,5 @@ public class AdminPaneli extends JFrame {
         
         return panel;
     }
+
 }
