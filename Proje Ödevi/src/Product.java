@@ -1,9 +1,4 @@
-/**
- * Product sınıfı - Kalıtım ve Interface kullanımı
- * - KALITIM: Veri abstract class'ından extends ediyor
- * - INTERFACE: SatinAlinabilir interface'ini implement ediyor
- * - POLYMORPHISM: Method overloading ile
- */
+
 public class Product extends Veri implements SatinAlinabilir {
     private String kod;
     private String marka;
@@ -16,7 +11,7 @@ public class Product extends Veri implements SatinAlinabilir {
 
     public Product(String kod, String marka, String kategori, String model, 
                    int numara, int stok, double fiyat, String aciklama) {
-        super(kod); // Parent constructor çağrısı - KALITIM
+        super(kod); 
         this.kod = kod;
         this.marka = marka;
         this.kategori = kategori;
@@ -46,35 +41,25 @@ public class Product extends Veri implements SatinAlinabilir {
                numara + "," + stok + "," + fiyat + "," + aciklama;
     }
     
-    // ==========================================
-    // ABSTRACT METODLARIN IMPLEMENTASYONU (Veri'den)
-    // ==========================================
-    
-    @Override
+
     public void kaydet() {
         System.out.println("Ürün kaydedildi: " + model);
     }
     
-    @Override
+
     public void goster() {
         System.out.println("Ürün: " + marka + " " + model + " - " + fiyat + " TL");
     }
-    
-    // ==========================================
-    // INTERFACE METODLARININ IMPLEMENTASYONU (SatinAlinabilir)
-    // ==========================================
-    
-    @Override
+
     public double fiyatGetir() {
         return fiyat;
     }
-    
-    @Override
+
     public boolean stokVarMi() {
         return stok > 0;
     }
     
-    @Override
+
     public boolean satinAl(int adet) {
         if (adet > stok) {
             return false;
@@ -83,16 +68,12 @@ public class Product extends Veri implements SatinAlinabilir {
         return true;
     }
     
-    // ==========================================
-    // POLYMORPHISM - METHOD OVERLOADING
-    // ==========================================
-    
-    // Basit bilgi göster
+   
     public void bilgiGoster() {
         System.out.println(marka + " " + model + " - " + numara + " numara");
     }
     
-    // Detaylı bilgi göster - OVERLOADING
+
     public void bilgiGoster(boolean detayli) {
         bilgiGoster();
         if (detayli) {
@@ -101,4 +82,5 @@ public class Product extends Veri implements SatinAlinabilir {
             System.out.println("Kategori: " + kategori);
         }
     }
+
 }
