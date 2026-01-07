@@ -93,7 +93,7 @@ public class ProductManager {
         ArrayList<Product> sonuc = new ArrayList<>();
         ArrayList<Product> tumUrunler = tumUrunleriGetir();
         
-        // Tüm ürünleri göster (model + numara kombinasyonları ayrı ayrı)
+        
         for (Product p : tumUrunler) {
             if (p.getMarka().equalsIgnoreCase(marka) && p.getKategori().equalsIgnoreCase(kategori)) {
                 sonuc.add(p);
@@ -104,7 +104,7 @@ public class ProductManager {
         return sonuc;
     }
     
-    // Belirli bir ürünün tüm numara seçeneklerini getir
+  
     public static ArrayList<Product> urunNumaralariniGetir(String marka, String kategori, String model) {
         ArrayList<Product> sonuc = new ArrayList<>();
         ArrayList<Product> tumUrunler = tumUrunleriGetir();
@@ -178,7 +178,7 @@ public class ProductManager {
   
     private static void ilkUrunleriOlustur() {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(URUN_DOSYA))) {
-            // NIKE - SPOR (3 MODEL x 3 NUMARA)
+    
             bw.write("N001-37,Nike,Spor,Air Max 270,37,15,2499.90,Günlük kullanım için rahat spor ayakkabı");
             bw.newLine();
             bw.write("N001-38,Nike,Spor,Air Max 270,38,18,2499.90,Günlük kullanım için rahat spor ayakkabı");
@@ -200,7 +200,7 @@ public class ProductManager {
             bw.write("N003-39,Nike,Spor,Court Vision,39,14,1799.90,Basketbol tarzı günlük ayakkabı");
             bw.newLine();
             
-            // NIKE - KOŞU (3 MODEL x 3 NUMARA)
+        
             bw.write("N004-37,Nike,Koşu,Pegasus 40,37,8,3299.90,Profesyonel koşu ayakkabısı");
             bw.newLine();
             bw.write("N004-38,Nike,Koşu,Pegasus 40,38,10,3299.90,Profesyonel koşu ayakkabısı");
@@ -222,7 +222,7 @@ public class ProductManager {
             bw.write("N006-39,Nike,Koşu,React Infinity,39,14,3599.90,Uzun mesafe koşu için");
             bw.newLine();
             
-            // NIKE - CASUAL (3 MODEL x 3 NUMARA)
+          
             bw.write("N007-37,Nike,Casual,Air Force 1,37,25,2999.90,Klasik streetwear ayakkabı");
             bw.newLine();
             bw.write("N007-38,Nike,Casual,Air Force 1,38,22,2999.90,Klasik streetwear ayakkabı");
@@ -244,7 +244,7 @@ public class ProductManager {
             bw.write("N009-39,Nike,Casual,Dunk Low,39,13,2899.90,Sokak modasının ikonu");
             bw.newLine();
             
-            // ADIDAS - SPOR (3 MODEL x 3 NUMARA)
+          
             bw.write("A001-37,Adidas,Spor,Superstar,37,22,2299.90,Efsanevi shell toe tasarım");
             bw.newLine();
             bw.write("A001-38,Adidas,Spor,Superstar,38,25,2299.90,Efsanevi shell toe tasarım");
@@ -266,7 +266,7 @@ public class ProductManager {
             bw.write("A003-39,Adidas,Spor,Stan Smith,39,24,2199.90,Minimalist klasik tasarım");
             bw.newLine();
             
-            // ADIDAS - KOŞU (3 MODEL x 3 NUMARA)
+         
             bw.write("A004-37,Adidas,Koşu,Ultraboost 23,37,11,4299.90,Premium koşu performansı");
             bw.newLine();
             bw.write("A004-38,Adidas,Koşu,Ultraboost 23,38,13,4299.90,Premium koşu performansı");
@@ -288,7 +288,7 @@ public class ProductManager {
             bw.write("A006-39,Adidas,Koşu,Duramo SL,39,21,1499.90,Bütçe dostu koşu ayakkabısı");
             bw.newLine();
             
-            // ADIDAS - CASUAL (3 MODEL x 3 NUMARA)
+         
             bw.write("A007-37,Adidas,Casual,Gazelle,37,20,2399.90,Vintage süet tasarım");
             bw.newLine();
             bw.write("A007-38,Adidas,Casual,Gazelle,38,22,2399.90,Vintage süet tasarım");
@@ -332,7 +332,7 @@ public class ProductManager {
             bw.write("NB003-39,New Balance,Spor,480,39,18,1899.90,Basketbol esinli günlük ayakkabı");
             bw.newLine();
             
-            // NEW BALANCE - KOŞU (3 MODEL x 3 NUMARA)
+         
             bw.write("NB004-37,New Balance,Koşu,Fresh Foam 1080,37,9,3799.90,Premium koşu yastıklama");
             bw.newLine();
             bw.write("NB004-38,New Balance,Koşu,Fresh Foam 1080,38,11,3799.90,Premium koşu yastıklama");
@@ -354,7 +354,7 @@ public class ProductManager {
             bw.write("NB006-39,New Balance,Koşu,880 v12,39,15,2599.90,Günlük antrenman için ideal");
             bw.newLine();
             
-            // NEW BALANCE - CASUAL (3 MODEL x 3 NUMARA)
+          
             bw.write("NB007-37,New Balance,Casual,550,37,13,2899.90,Vintage basketbol silüeti");
             bw.newLine();
             bw.write("NB007-38,New Balance,Casual,550,38,15,2899.90,Vintage basketbol silüeti");
@@ -405,4 +405,5 @@ public class ProductManager {
             System.out.println(kategori + ": " + nikeKategoriler.get(kategori).size() + " ürün");
         }
     }
+
 }
