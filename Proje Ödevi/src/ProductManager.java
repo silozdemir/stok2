@@ -310,7 +310,7 @@ public class ProductManager {
             bw.write("A009-39,Adidas,Casual,Forum Low,39,16,2599.90,90'lar basketbol estetiği");
             bw.newLine();
             
-            // NEW BALANCE - SPOR (3 MODEL x 3 NUMARA)
+
             bw.write("NB001-37,New Balance,Spor,574 Core,37,18,2199.90,İkonik retro running tasarım");
             bw.newLine();
             bw.write("NB001-38,New Balance,Spor,574 Core,38,20,2199.90,İkonik retro running tasarım");
@@ -407,3 +407,4 @@ public class ProductManager {
     }
 
 }
+
