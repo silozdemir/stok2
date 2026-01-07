@@ -24,7 +24,7 @@ public class SepetEkrani extends JFrame {
         ustPanel.setPreferredSize(new Dimension(1000, 80));
         
      
-        JButton btnGeri = new JButton("← Geri");
+        JButton btnGeri = new JButton("Geri");
         btnGeri.setFont(new Font("Tahoma", Font.BOLD, 14));
         btnGeri.setBackground(new Color(127, 140, 141));
         btnGeri.setForeground(Color.WHITE);
@@ -33,7 +33,7 @@ public class SepetEkrani extends JFrame {
         btnGeri.setPreferredSize(new Dimension(100, 40));
         btnGeri.addActionListener(e -> dispose());
         
-        JLabel lblBaslik = new JLabel("🛒 SEPETİM");
+        JLabel lblBaslik = new JLabel("SEPETİM");
         lblBaslik.setFont(new Font("Tahoma", Font.BOLD, 26));
         lblBaslik.setForeground(Color.WHITE);
         lblBaslik.setHorizontalAlignment(SwingConstants.CENTER);
@@ -89,7 +89,7 @@ public class SepetEkrani extends JFrame {
         JPanel butonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         butonPanel.setBackground(Color.WHITE);
         
-        JButton btnAdetArtir = new JButton("➕ Adet Artır");
+        JButton btnAdetArtir = new JButton("Adet Artır");
         btnAdetArtir.setPreferredSize(new Dimension(140, 45));
         btnAdetArtir.setBackground(new Color(52, 152, 219));
         btnAdetArtir.setForeground(Color.WHITE);
@@ -98,7 +98,7 @@ public class SepetEkrani extends JFrame {
         btnAdetArtir.setBorderPainted(false);
         btnAdetArtir.addActionListener(e -> adetDegistir(1));
         
-        JButton btnAdetAzalt = new JButton("➖ Adet Azalt");
+        JButton btnAdetAzalt = new JButton("Adet Azalt");
         btnAdetAzalt.setPreferredSize(new Dimension(140, 45));
         btnAdetAzalt.setBackground(new Color(230, 126, 34));
         btnAdetAzalt.setForeground(Color.WHITE);
@@ -292,3 +292,4 @@ public class SepetEkrani extends JFrame {
     }
 
 }
+
