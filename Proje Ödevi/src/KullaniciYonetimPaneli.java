@@ -28,7 +28,6 @@ public class KullaniciYonetimPaneli extends JFrame {
 
         String[] sutunlar = {"Kullanıcı Adı", "Şifre", "Rol"};
         model = new DefaultTableModel(sutunlar, 0) {
-            @Override
             public boolean isCellEditable(int row, int column) {
                 return false;
             }
@@ -139,3 +138,4 @@ public class KullaniciYonetimPaneli extends JFrame {
     }
 
 }
+
