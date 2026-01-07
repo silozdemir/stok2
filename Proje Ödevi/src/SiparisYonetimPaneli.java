@@ -15,7 +15,7 @@ public class SiparisYonetimPaneli extends JFrame {
         getContentPane().setLayout(new BorderLayout());
         getContentPane().setBackground(new Color(0, 215, 215));
         
-        // ÜST PANEL
+     
         JPanel ustPanel = new JPanel();
         ustPanel.setBackground(new Color(0, 215, 215));
         ustPanel.setPreferredSize(new Dimension(1100, 80));
@@ -27,7 +27,7 @@ public class SiparisYonetimPaneli extends JFrame {
         
         add(ustPanel, BorderLayout.NORTH);
         
-        // TABLO
+       
         String[] sutunlar = {"Kullanıcı", "Ürün Kodu", "Model", "Adet", "Toplam Fiyat", "Tarih"};
         model = new DefaultTableModel(sutunlar, 0) {
             @Override
@@ -51,12 +51,12 @@ public class SiparisYonetimPaneli extends JFrame {
         scrollPane.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
         add(scrollPane, BorderLayout.CENTER);
         
-        // ALT PANEL
+ 
         JPanel altPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         altPanel.setBackground(new Color(0, 215, 215));
         altPanel.setPreferredSize(new Dimension(1100, 80));
         
-        JButton btnYenile = new JButton("🔄 Yenile");
+        JButton btnYenile = new JButton("Yenile");
         btnYenile.setPreferredSize(new Dimension(150, 50));
         btnYenile.setBackground(new Color(52, 152, 219));
         btnYenile.setForeground(Color.WHITE);
@@ -65,7 +65,7 @@ public class SiparisYonetimPaneli extends JFrame {
         btnYenile.setBorderPainted(false);
         btnYenile.addActionListener(e -> siparisleriYukle());
         
-        JButton btnSil = new JButton("🗑️ Sil");
+        JButton btnSil = new JButton("Sil");
         btnSil.setPreferredSize(new Dimension(150, 50));
         btnSil.setBackground(new Color(231, 76, 60));
         btnSil.setForeground(Color.WHITE);
@@ -160,4 +160,5 @@ public class SiparisYonetimPaneli extends JFrame {
             }
         }
     }
+
 }
