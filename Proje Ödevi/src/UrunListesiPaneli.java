@@ -50,7 +50,7 @@ public class UrunListesiPaneli extends JFrame {
        
         ArrayList<Product> urunler = ProductManager.kategoriUrunleriGetir(marka, kategori);
         
-        // Dinamik grid layout - her satırda 3 ürün
+        
         int urunSayisi = urunler.size();
         int satirSayisi = (int) Math.ceil(urunSayisi / 3.0);
         
@@ -59,13 +59,12 @@ public class UrunListesiPaneli extends JFrame {
         ortaPanel.setLayout(new GridLayout(satirSayisi, 3, 20, 20));
         ortaPanel.setBorder(BorderFactory.createEmptyBorder(20, 30, 20, 30));
         
-        // Tüm ürünleri göster
         for (Product urun : urunler) {
             JPanel urunKart = urunKartiOlustur(urun);
             ortaPanel.add(urunKart);
         }
         
-        // ScrollPane ekle (çok fazla ürün varsa kaydırma çubuğu)
+    
         JScrollPane scrollPane = new JScrollPane(ortaPanel);
         scrollPane.setBorder(null);
         scrollPane.getVerticalScrollBar().setUnitIncrement(16);
@@ -155,7 +154,7 @@ public class UrunListesiPaneli extends JFrame {
         butonPanel.setBorder(BorderFactory.createEmptyBorder(10, 15, 15, 15));
         
     
-        JButton btnDetay = new JButton(" Detayları Gör");
+        JButton btnDetay = new JButton("Detayları Gör");
         btnDetay.setBackground(new Color(41, 128, 185));
         btnDetay.setForeground(Color.WHITE);
         btnDetay.setFont(new Font("Tahoma", Font.BOLD, 13));
@@ -166,13 +165,13 @@ public class UrunListesiPaneli extends JFrame {
         });
         
 
-        JButton btnSepeteEkle = new JButton("🛒 Sepete Ekle");
+        JButton btnSepeteEkle = new JButton("Sepete Ekle");
         btnSepeteEkle.setFont(new Font("Tahoma", Font.BOLD, 13));
         btnSepeteEkle.setFocusPainted(false);
         btnSepeteEkle.setBorderPainted(false);
         
         if (urun.getStok() == 0) {
-            btnSepeteEkle.setText("❌ Stokta Yok");
+            btnSepeteEkle.setText("Stokta Yok");
             btnSepeteEkle.setEnabled(false);
             btnSepeteEkle.setBackground(Color.GRAY);
             btnSepeteEkle.setForeground(Color.WHITE);
@@ -221,10 +220,10 @@ public class UrunListesiPaneli extends JFrame {
         if (secim != null) {
             int adet = Integer.parseInt(secim);
             
-            // Sepete ekle
+     
             if (Sepet.urunEkle(urun, adet)) {
                 JOptionPane.showMessageDialog(this, 
-                    "✓ Ürün sepete eklendi!\n\n" +
+                    "Ürün sepete eklendi!\n\n" +
                     "Ürün: " + urun.getModel() + " (Numara: " + urun.getNumara() + ")\n" +
                     "Adet: " + adet + "\n\n" +
                     "Sepetinizde toplam " + Sepet.toplamUrunSayisi() + " ürün var.", 
@@ -238,4 +237,5 @@ public class UrunListesiPaneli extends JFrame {
             }
         }
     }
+
 }
